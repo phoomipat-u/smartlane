@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1048624363634",
+    "firebase_url": "https://smartlane-198fd.firebaseio.com",
+    "project_id": "smartlane-198fd",
+    "storage_bucket": "smartlane-198fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048624363634:android:9e524dbeb9ebc199",
+        "android_client_info": {
+          "package_name": "trigon.smartlane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048624363634-2tuvlgq9m6sfjcatocgidcv8ov5r5jei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "trigon.smartlane",
+            "certificate_hash": "5ea4f67a5c2e54df009493f8c7a3ebff972d4a1d"
+          }
+        },
+        {
+          "client_id": "1048624363634-7eedt5vd9sjpsdte4m1q7do15vas1eo7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo5nkNis5xtiY2ykCxdtHda3dwntYpOLs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048624363634-7eedt5vd9sjpsdte4m1q7do15vas1eo7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
