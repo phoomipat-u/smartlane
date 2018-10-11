@@ -9,6 +9,7 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -29,6 +30,7 @@ import android.app.Service;
 public class TrackingService extends Service {
 
     private static final String TAG = TrackingService.class.getSimpleName();
+    private FirebaseAuth mAuth;
     private String busId;
 
     @Override
@@ -92,8 +94,12 @@ public class TrackingService extends Service {
         String password = getString(R.string.test_password);
 
 //Call OnCompleteListener if the user is signed in successfully//
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
 
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(
+
+
+        mAuth.signInWithEmailAndPassword(
                 email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(Task<AuthResult> task) {
